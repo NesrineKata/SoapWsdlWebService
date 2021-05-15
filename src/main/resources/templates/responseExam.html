@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Status</title>
+<style type="text/css">
+	span {
+        display: inline-block;
+        width: 280px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+	<div align="center">
+		<h2>  Results</h2>
+		<!--  <span> Student eligeble ? </span> <span th:text="${response.isEligeble}"></span> <br/>
+		
+		<!-- <span> Approved Date ? </span> <span th:text="${response.date}"></span> <br/> 
+				*-->
+		
+		<div> 
+			<h4>List Of Exams</h4>
+			<table>
+			<tr th:each="exam: ${responseExam.exams}">
+			    <td th:text="${exam.code}" />
+			    <td th:text="${exam.name}" />
+			</tr>
+			
+			</table>
+		
+		</div>
+			
+		
+	</div>
+</body>
+</html>

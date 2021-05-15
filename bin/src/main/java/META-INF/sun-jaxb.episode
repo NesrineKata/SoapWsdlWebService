@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
+Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2021.05.15 à 10:39:12 AM CEST 
+
+  -->
+      
+    <bindings xmlns:tns="http://www.tekup.de/soap/models/whitetest" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="tekup.de.soap.api.consume.whitetest"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:StudentRequest">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.StudentRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:WhiteTestResponse">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.WhiteTestResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:Student">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.Student"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:Exam">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.Exam"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:GetExamsRequest">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.GetExamsRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:GetExamsResponse">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.GetExamsResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:Address">
+                  
+            <class ref="tekup.de.soap.api.consume.whitetest.Address"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>
