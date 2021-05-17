@@ -31,11 +31,14 @@ public class CheckController {
 		WhiteTestResponse response = client.getCertifStatus(request);
 		model.addAttribute("response", response);
 		return "response";
-	}@GetMapping("/check/exams")
+	}
+	@GetMapping("/check/exams")
 	public String examForm(Model model) {
 		GetExamsRequest request = new GetExamsRequest();
 		model.addAttribute("requestExam", request);
-		return "requestExam";
+		return examCheck(request,model);
+		//return "requestExam";
+		
 	}
 	
 	@PostMapping("/check/exams")
@@ -45,4 +48,12 @@ public class CheckController {
 		model.addAttribute("responseExam", response);
 		return "responseExam";
 	}
+	
+	//Home page
+	@GetMapping("/")
+	public String home(Model model) {
+		
+		return "index";
+	}
+	
 }

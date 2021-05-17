@@ -14,21 +14,61 @@
         display: inline-block;
         width: 200px;
     }
-    input[type=radio] {
-        margin-left: 45px;
-    }
-    input[type=checkbox] {
-        margin-right: 190px;
-    }  
+   
     button {
         padding: 5px;
         margin: 10px;
     }
+    body  {
+   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #C70039;
+  color: white;
+}
+span {
+        display: inline-block;
+        width: 280px;
+        text-align: left;
+    }
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  color:#C70039 ;
+}
+
 </style>
 </head>
 <body>
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+ 
+</div>
 
-	<div align="center">
+	<div class="content">
 		<h2>Check Student Form</h2>
 		<form action="#" th:action="@{/check/exams}" method="post" th:object="${requestExam}">
 			
